@@ -1,9 +1,8 @@
 """Base Django settings."""
-from pathlib import Path
 import os
+from pathlib import Path
 
 import dj_database_url
-
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 DEFAULT_SQLITE_URL = f"sqlite:///{(BASE_DIR / 'db.sqlite3').as_posix()}"
