@@ -1,4 +1,5 @@
 """Development settings."""
+
 from .base import *  # noqa: F403
 from .base import env_bool, env_list
 
