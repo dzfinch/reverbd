@@ -1,41 +1,54 @@
 # Security Policy
 
-This repository is currently **private** and under active development.
+## Supported Versions
+Reverbd is under active development. Security fixes are applied to:
+- The latest release (if releases exist), and
+- The current `main` branch
 
-This document defines internal expectations for handling security issues and
-provides a placeholder for a public disclosure policy when the project becomes
-publicly accessible.
+If you are using an older version, please upgrade and re-test before reporting.
 
-## Reporting Security Issues
-If you discover a security vulnerability or sensitive issue related to this
-codebase, **do not open a public issue**.
+## Reporting a Vulnerability
+Please **do not** open public GitHub issues for security vulnerabilities.
 
-Instead, report it privately to:
-- Project owner: Dryver Finch
-- Contact: dryver.finch@outlook.com
+Instead, report vulnerabilities privately using one of the following:
+- Email: dryver.finch@outlook.com
 
-Please include:
-- A brief description of the issue
-- Steps to reproduce (if applicable)
-- Affected files, endpoints, or configurations
-- Any relevant context (logs, screenshots, etc.)
+Include:
+- A clear description of the vulnerability and potential impact
+- Steps to reproduce (proof-of-concept if possible)
+- Affected endpoints/files and version/commit hash
+- Any relevant logs or screenshots (please redact sensitive data)
 
-## Handling & Disclosure
-- Security issues should be addressed with priority relative to severity.
-- Fixes should be merged via a private branch or pull request.
-- Public disclosure will not occur until a fix is in place and the project
-  becomes publicly accessible.
+## Response Timeline
+We aim to:
+- Acknowledge your report within **72 hours**
+- Provide a status update within **7 days**
+- Release a fix as quickly as feasible based on severity
+
+If the issue is confirmed, we will coordinate a responsible disclosure timeline with you.
 
 ## Scope
-This policy applies to:
-- Application code in this repository
-- Configuration and deployment artifacts tracked here
+This policy applies to vulnerabilities in:
+- Reverbd application code and first-party services
+- Our official deployments (when applicable)
 
-Third-party dependencies and services are handled according to their own
-security policies and update cycles.
+Out of scope (examples):
+- Social engineering, phishing, or physical attacks
+- Denial-of-service (DoS) and high-volume automated scanning
+- Vulnerabilities in third-party services outside our control
+- Reports requiring access to accounts/data not owned by the reporter
 
-## Future Updates
-This policy will be expanded once:
-- The repository becomes public, or
-- The application has external users or partners
+## Safe Harbor
+We support good-faith security research. If you:
+- Make a good-faith effort to avoid privacy violations, data destruction, and service disruption
+- Only access data necessary to demonstrate the issue
+- Do not publicly disclose the issue before we’ve had a reasonable chance to fix it
 
+…we will not pursue legal action against you for your research.
+
+## Disclosure
+Please do not publicly disclose vulnerabilities until:
+- We have released a fix, or
+- We have agreed on a disclosure timeline together
+
+Thank you for helping keep Reverbd and its users safe.
